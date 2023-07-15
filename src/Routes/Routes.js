@@ -1,6 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../layout/Main";
 import Home from "../Pages/Home/Home";
+import News from "../Pages/News/News";
+import Coins from "../Pages/Coins/Coins";
+import DetailsOfCoin from "../Pages/Coins/DetailsOfCoin";
 // import Home from "../Pages/Home/Home";
 
 const router = createBrowserRouter([
@@ -14,14 +17,14 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home></Home>,
       },
-      //     {
-      //       path: "/blogs",
-      //       element: <Blogs></Blogs>,
-      //     },
-      //     {
-      //       path: "/allparts",
-      //       element: <AllParts></AllParts>,
-      //     },
+      {
+        path: "/news",
+        element: <News></News>,
+      },
+      {
+        path: "/coins",
+        element: <Coins></Coins>,
+      },
       //     {
       //       path: "/login",
       //       element: <Login></Login>,
@@ -30,10 +33,10 @@ const router = createBrowserRouter([
       //       path: "/signup",
       //       element: <SignUp></SignUp>,
       //     },
-      //     {
-      //       path: "/portfolio",
-      //       element: <MyPortfolio></MyPortfolio>,
-      //     },
+      {
+        path: "/details/:id",
+        element: <DetailsOfCoin></DetailsOfCoin>,
+      },
       //     {
       //       path: "/purchase/:id",
       //       element: <Purchase></Purchase>,
